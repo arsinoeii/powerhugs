@@ -7,13 +7,30 @@
   <title>Document</title>
 </head>
 <body>
-  <nav></nav>
+    <nav>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://via.placeholder.com/120x40.png" alt="Banner Placeholder">
+        </div>
+        <!-- navigation -->
+        <ul>
+            <li><input type="text" placeholder="Search"></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./history-of-gin.html">History of Gin</a></li>
+            <li><a href="./how-gin-is-made.html">How Gin is Made</a></li>
+            <li><a href="./gin-in-the-uk.html">Gin in the UK</a></li>
+            <li>
+                <a href="./gin-store.html">Gin Store</a>
+                <div class="cart_icon"><img src="./images/shopping_cart_010.jpg" alt="cart icon" width="15px"></div>
+            </li>
+        </ul>
+    </nav>
 
-  <main>
-  <div>
+<main>
+  <header>
     <h1>Heading</h1>
     <p>text placeholder</p>
-  </div>
+  </header>
 
   <div class="slideshow-container">
       <div class="mySlides fade">
@@ -33,7 +50,7 @@
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      
+
       <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -42,14 +59,47 @@
   </div>
 
   <div>
-      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x250" alt=""></a>
-      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x250" alt=""></a>
-      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x250" alt=""></a>
-      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x250" alt=""></a>
+    <div>
+      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x250?text=UK+Gin+Map" alt=""></a>
+      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x250?text=History+of+Gin" alt=""></a>
+    </div>
+    <div>
+      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x250?text=How+Gin+is+made" alt=""></a>
+      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x250?text=Map" alt=""></a>
+    </div>
   </div>
-
 </main>
-      
+
+<footer>
+    <div class="email_newslettetr">
+        <h5 class="footerHeading">Email Newsletter</h5>
+        <form action="" class="footerInputs">
+            <div><input type="text" name="email"></div>
+            <div><button id="subscribe">Subscribe</button></div>
+        </form>
+    </div>
+    <div class="contact_us">
+        <h5 class="footerHeading">Contact Us</h5>
+        <form action="" class="footerInputs">
+            <div><input type="text" name="email"></div>
+            <div><input type="textarea"></div>
+            <div><input type="submit" value="Submit" id="contact"></div>
+        </form>
+    </div>
+    <div class="search">
+        <h5 class="footerHeading">Search</h5>
+        <div><input type="text" placeholder="Search" class="footerInputs"></div>
+        <div class="follow_us">
+            <h5 class="footerHeading">Follow Us</h5>
+            <ul>
+                <li><a href="#"><img src="./images/Facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/Twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/Instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/Google+.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>    
     
 </body>
 </html>
