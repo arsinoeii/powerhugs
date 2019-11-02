@@ -1,10 +1,19 @@
 /* comment*/
 *{
     box-sizing: border-box;
+    margin: 10px;
 }
 
 .bd-example {
-    width:640px;
-    height:360px;
-    ;
+    display: flex;
+    justify-content: center;
   }
+
+
+.main_container{
+    width: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+}
+
