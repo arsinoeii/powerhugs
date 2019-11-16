@@ -1,19 +1,17 @@
 /* comment*/
-*{
-    box-sizing: border-box;
-    margin: 10px;
+* {
+  box-sizing: border-box;
+  margin: 10px;
 }
 
 .bd-example {
-    display: flex;
-    justify-content: center;
-  }
-
-
-.main_container{
-    width: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
+  display: flex;
+  justify-content: center;
 }
 
+.main_container {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
