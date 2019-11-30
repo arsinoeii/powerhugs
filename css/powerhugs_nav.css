@@ -2,24 +2,18 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
-h1 {
-  font-size: 40px;
-}
-
 nav {
   background-color: rgb(168, 177, 162);
   width: 100%;
   position: fixed;
-  padding: 0 1em;
+  /* padding: 0 1em; */
+  padding-right: 5em;
   margin: 0;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 .logo {
