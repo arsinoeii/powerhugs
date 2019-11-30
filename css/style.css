@@ -1,7 +1,5 @@
 /* comment*/
-* {
-  box-sizing: border-box;
-}
+
 .img_carousel {
   filter: brightness(0.6);
 }

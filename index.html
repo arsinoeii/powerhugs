@@ -17,33 +17,40 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/powerhugs_nav.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
   <title>Homepage</title>
 </head>
 
 <body>
   <nav>
-    <!-- Logo -->
     <div class="logo">
       <img src="./images/logo.png" alt="Banner Placeholder" />
     </div>
-    <!-- navigation -->
-    <div></div>
-    <ul>
-      <li><input type="text" placeholder="Search" /></li>
-      <li><a href="./home.html">Home</a></li>
-      <li><a href="./history-of-gin.html">History of Gin</a></li>
-      <li><a href="./how-gin-is-made.html">How Gin is Made</a></li>
-      <li><a href="./gin-in-the-uk.html">Gin in the UK</a></li>
-      <li>
-        <a href="./gin-store.html">Gin Store</a>
-        <div class="cart_icon">
-          <img src="./images/shopping_cart_010.jpg" alt="cart icon" width="15px" />
-        </div>
-      </li>
-    </ul>
+    <div class="drop_down">
+      <ul class="nav_list">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./history-of-gin.html">History</a></li>
+        <li><a href="./how-gin-is-made.html">How Gin is Made</a></li>
+        <li><a href="./gin-in-the-uk.html">UK Gin</a></li>
+        <li>
+          <a class="cart_icon" href="./gin-store.html">
+            <!--added span to make space between text & icon-->
+            <span>Store</span>
+            <!--Moved img into <a> to make icon responsive with link-->
+            <img src="./images/shopping_cart_010.jpg" alt="cart icon" width="15px" />
+          </a>
+        </li>
+      </ul>
+      <div class="menu_wrapper">
+        <div class="menu"></div>
+      </div>
+    </div>
   </nav>
 
+
   <main>
+
     <header>
       <h1>Heading</h1>
       <p>text placeholder</p>
@@ -174,6 +181,7 @@
       </div>
     </div>
   </footer>
+  <script src="powerhugs_nav.js"></script>
 </body>
 
 </html>
