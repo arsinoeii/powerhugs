@@ -10,7 +10,7 @@
 }
 
 main {
-  padding: 96px;
+  padding-top: 110px;
 }
 
 .main_container {
@@ -19,8 +19,8 @@ main {
   grid-auto-rows: 300px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  padding: 50px 0;
-  filter: brightness(0.6);
+  /* padding: 50px 0; */
+  padding-bottom: 100px;
 }
 
 @media screen and (max-width: 767px) {
@@ -38,9 +38,11 @@ main {
 .img_links h2 {
   position: absolute;
   top: 50%;
-  right: 35%;
-  z-index: 50;
+  left: 50%;
+  z-index: 70;
   color: white;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .img_links img {
@@ -49,13 +51,15 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  filter: brightness(0.6);
+  filter: brightness(0.5);
 }
 
 .carousel_wrapper {
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+  padding-bottom: 120px;
+  padding-top: 70px;
 }
 
 .carousel_responsive {
@@ -81,4 +85,15 @@ img.d-block {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 10px;
+}
+
+.global_container {
+  padding-left: 100px;
+  padding-right: 100px;
 }
