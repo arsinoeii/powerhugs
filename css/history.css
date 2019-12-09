@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+h1 {
+  display: flex;
+  margin: 20px 20px;
+  font-size: 40px;
+  color: rgb(168, 177, 162);
+}
+
+h2 {
+  margin: 0;
+  line-height: 100%;
+  color: rgb(168, 177, 162);
+}
+
+h3 {
+  margin: 0 20px;
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.4em;
+  margin: 20px 0;
+}
+
+.timeline {
+  margin: 30px 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+}
+
+.row::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: white;
+  border: 3px rgb(226, 109, 56) solid;
+  border-radius: 50%;
+}
+
+.container_left {
+  border-right: 0.1em rgb(226, 109, 56) solid;
+  width: 50%;
+  padding: 0 20px 20px 0;
+  overflow: hidden;
+}
+
+.container_right {
+  border-left: 0.1em rgb(226, 109, 56) solid;
+  width: 50%;
+  padding: 0 0 20px 20px;
+}
+
+.date {
+  margin: 0;
+  line-height: 100%;
+  font-size: 1.5em;
+  color: rgb(226, 109, 56);
+}
+
+.container_right .date {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container_left .date,
+.container_left h2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img_container {
+  position: relative;
+  margin: 20px 0 0 0;
+}
+
+.img_container img {
+  width: 100%;
+}
