@@ -9,7 +9,7 @@ body {
 footer {
   display: flex;
   justify-content: space-around;
-  background: #f3f2f2;
+  background:  rgb(209, 211, 205);
   width: 100%;
   margin: 0;
   padding: 10px;

@@ -8,9 +8,9 @@ body {
 }
 
 nav {
-  background-color: rgb(168, 177, 162);
+  background: rgb(209, 211, 205);
   width: 100%;
-  position: fixed;
+  position: sticky;
   margin: 0;
   top: 0;
   display: flex;
@@ -49,7 +49,7 @@ nav {
 
 .nav_list li a {
   text-decoration: none;
-  color: rgb(226, 109, 56);
+  color: rgb(88, 88, 90);
   font-family: Montserrat;
   font-size: 1.2em;
 }
