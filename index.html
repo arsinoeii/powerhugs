@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -17,14 +16,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/powerhugs_nav.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="github.com/necolas/normalize.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/powerhugs_nav.css" />
+  <link rel="stylesheet" href="css/gin_footer.css" />
+
   <title>Homepage</title>
 </head>
 
 <body>
-  <nav class="global_container">
-    <div class="logo" class="global_container">
+  <nav>
+    <div class="logo">
       <img src="./images/logo.png" alt="Banner Placeholder" />
     </div>
     <div class="drop_down">
@@ -34,7 +38,7 @@
         <li><a href="./how-gin-is-made.html">How Gin is Made</a></li>
         <li><a href="./gin-in-the-uk.html">UK Gin</a></li>
         <li>
-          <a class="cart_icon" href="./gin-store.html">
+          <a class="cart_icon" href="images/">
             <!--added span to make space between text & icon-->
             <span>Store</span>
             <!--Moved img into <a> to make icon responsive with link-->
@@ -151,27 +155,32 @@
     </div>
   </main>
 
-  <footer class="global_container">
-    <div class="email_newslettetr">
+  <footer>
+    <div class="email_newsletter">
       <h5 class="footerHeading">Email Newsletter</h5>
       <form action="" class="footerInputs">
-        <div><input type="text" name="email" /></div>
-        <div><button id="subscribe">Subscribe</button></div>
+        <div><input type="text" name="email" placeholder="Email" /></div>
+        <div>
+          <button id="subscribe">Subscribe</button>
+        </div>
       </form>
     </div>
     <div class="contact_us">
       <h5 class="footerHeading">Contact Us</h5>
       <form action="" class="footerInputs">
-        <div><input type="text" name="email" /></div>
-        <div><input type="textarea" /></div>
-        <div><input type="submit" value="Submit" id="contact" /></div>
+        <div><input type="text" name="email" placeholder="Email" /></div>
+        <div>
+          <textarea placeholder="Your message" rows="4" cols="50"></textarea>
+        </div>
+        <div><button id="submit">Submit</button></div>
       </form>
     </div>
     <div class="search">
       <h5 class="footerHeading">Search</h5>
-      <div>
-        <input type="text" placeholder="Search" class="footerInputs" />
-      </div>
+      <form action="">
+        <div><input type="text" name="search_box" placeholder="" /></div>
+        <div><button id="search">Search</button></div>
+      </form>
       <div class="follow_us">
         <h5 class="footerHeading">Follow Us</h5>
         <ul>
@@ -191,7 +200,9 @@
       </div>
     </div>
   </footer>
-  <script src="powerhugs_nav.js"></script>
+  <script src="javascript/powerhugs_nav.js"></script>
+
+
 </body>
 
 </html>
