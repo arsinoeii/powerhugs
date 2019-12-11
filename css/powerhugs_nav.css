@@ -2,18 +2,22 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   background-color: rgb(168, 177, 162);
   width: 100%;
   position: fixed;
-  /* padding: 0 1em; */
-  padding-right: 5em;
   margin: 0;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  padding: 0 20px;
 }
 
 .logo {
@@ -96,19 +100,16 @@ nav {
 }
 
 @media (max-width: 790px) {
-  /* .drop_down .menu {
-    display: inline;
-  } */
-
   .drop_down .menu_wrapper {
     display: flex;
   }
 
-  /* .nav_list {
-    display: none;
-  } */
-
   .nav_list {
+    display: none;
+  }
+
+  .nav_list.active {
+    display: flex;
     flex-direction: column;
     position: fixed;
     top: 5.8em;
