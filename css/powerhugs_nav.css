@@ -11,13 +11,13 @@ nav {
   background-color: rgb(168, 177, 162);
   width: 100%;
   position: fixed;
-  padding-right: 5em;
   margin: 0;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  padding: 0 20px;
 }
 
 .logo {
