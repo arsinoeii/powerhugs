@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  background: #f3f2f2;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+h1 {
+  margin: 50px 20px;
+  font-size: 40px;
+  color: rgb(168, 177, 162);
+}
+
+h2 {
+  margin: 0;
+  line-height: 100%;
+  color: rgb(168, 177, 162);
+}
+
+h3 {
+  margin: 0 20px 50px 20px;
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.4em;
+  margin: 35px 0;
+}
+
+.store_form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5em;
+  font-family: montserrat;
+}
+
+.personal_details input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 3px 0;
+  font-family: montserrat;
+}
+
+.radio_wrapper {
+  width: 220px;
+}
+
+.radio_wrapper div {
+  margin: 0 0 20px 0;
+}
+
+.radio_wrapper input {
+  border: none;
+  width: 10%;
+  padding: 10px;
+  margin: 3px 0;
+  
+}
+
+.radio_wrapper input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+.store_form textarea {
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 10px 0 20px 0;
+  font-family: montserrat;
+  resize: none;
+  overflow: auto;
+}
+
+.store_form button {
+  font-family: montserrat;
+  color: rgb(226, 109, 56);
+  border-radius: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+}
