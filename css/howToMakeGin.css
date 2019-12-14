@@ -2,8 +2,15 @@
     box-sizing: border-box;
   }
   
-
-
+  body {
+    margin: 0;
+    font-family: montserrat;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
   .head-container {
 
     margin-top: 100px ;
@@ -16,126 +23,142 @@
     display: flex ;
     flex-direction: column ;
     z-index: 10;
-    padding: 2% ;
+    padding-top: 2% ;
     border-bottom:3px solid #E04C10 ;
     
   }
 
   .box {
 
-    margin-top: 1em;
-    height: auto ;
-   
+    min-height: 300px ; 
+    display: grid;
+    grid-column-gap: 0;
+    grid-template-columns: 1fr 1fr ;
+  
 
   }
 
+  .box1 {
+
+    border-top : 3px solid #E04C10 ;
+
+  }
+
+  .sub-box {
+   
+  }
 
   .step {
-    font-size: 1em;
-    border: 3px solid #E04C10 ;
-    width: 80% ;
+    position: relative;
     margin: 0 0 ;
-    opacity: 50% ;
-    height: 100% ;
+    padding: 0;
+    overflow: hidden ;
     
+  }
+
+  .step-title {
+
+    color: #E04C10 ;
+    font-size: 150px;
+    margin: 0 0 0 0 ;
+    margin-right: 0% ;
+    z-index: 60;
   }
 
   .text {
 
-    visibility: hidden ; 
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 80%;
+  font-size: 60px;
 
   }
 
-  .title {
+  .step-title {
+
+    color: #E04C10 ;
+    font-size: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 5% ; 
+    width: 80%;
+
+  }
+
+.image-base {
+    
+  position: absolute ;
+  max-height: 600px;
+
+}
+
+.gap {
+
+  height: 100px;
+
+}
+
+  .img1 {
 
     position: absolute ;
+    max-height: 1000px;
+    transform: translate(0,-40%) ;
+    z-index: 50;
+
+  }
+
+  .img2 {
+
+    position: absolute ;
+    max-height: 1000px;
+    transform: translate(0,-40%) ;
     
   }
 
-  .left .text {
+  .img3 {
 
-  }
-
-  .right .text {
-
-
-  }
-
-  .left .title {
-
-    top: 40% ;
-    right: 20%;
-
-}
-
-.right .title {
-
-    top: 40% ;
-    left: 20%;
-
-}
-
-  .left:hover {
-
-    opacity: 100% ;
-    transform: translate(0,0) ;
-    transition: .5s ease;
-
-  }
-
-  .left:hover .title{ 
-      visibility: hidden ;
-
-  }
-
-  .left:hover .text{
-
-    visibility: visible ; 
-
-
-}
-
-  .right:hover {
-
-    opacity: 100% ;
-    transform : translate(0.1%,0) ;
-    transition: .5s ease;
+    position: absolute ;
+    max-height: 1000px;
+    transform: translate(0,-40%) ;
     
   }
 
-  .right:hover .title{ 
-    visibility: hidden ;
+  .img4 {
 
-}
-
-.right:hover .text{
-
-  visibility: visible ; 
-
-
-}
-
-  .left {
-
-    float: left ;
-    /* border-left: 0 ; */
-    padding-left: 1em ;
-    transform: translate(-40%,0) ;
-    
-    
-   }
-
-  .right {
-
-    float: right ;
-    /* border-right: 0 ; */
-    padding-right: 1em ;
-    transform: translate(40%,0) ;
+    position: absolute ;
+    max-height: 2000px;
+    transform: translate(0,-25%) ;
     
   }
 
-  
+  .img5 {
+
+    position: absolute ;
+    max-height: 1600px;
+    transform: translate(0,-20%) ;
+    
+  }
+
+  .img6 {
+
+    position: absolute ;
+    max-height: 1300px;
+    transform: translate(-20%,-20%) ;
+    
+  }
+
+  .img7 {
+
+    position: absolute ;
+    max-height: 1200px;
+    transform: translate(0,-20%) ;
+    
+  } 
+
   .video{
 
     position: relative ;
@@ -144,10 +167,93 @@
 
   }
 
-  iframe {
+.image-base:hover {
 
+  opacity: 50%;
+
+}
+
+@media (max-width: 1350px) {
+
+  .step-title {
+  font-size: 100px ;
+  }
+
+  .box {
+  min-height: 200px;
+  height: 240px ;
 
   }
 
+  .text {
+
+    font-size: 40px;
   
+    }
+
+    .image-base {
+
+      max-height: 1000px ;
+    }
+
+}
+
+@media (max-width: 890px) {
+
+  .step-title {
+  font-size: 80px ;
+  }
+
+  .box {
+
+    min-height: 100px ;
+  height: 150px ;
+  }
+
+  .text {
+
+    font-size: 20px;
   
+    }
+
+    .image-base {
+
+      max-height: 700px ;
+    }
+
+}
+
+@media (max-width: 740px) {
+
+  .step-title {
+
+  font-size: 30px ;
+  transform: translate(0, 40%)
+
+  }
+
+  .box {
+
+    min-height: 80px ;
+  height: 100px ;
+
+  }
+
+  .text {
+
+    font-size: 15px;
+  
+    }
+
+    .image-base {
+
+      max-height: 500px ;
+    }
+
+    .img4 {
+
+      max-height: 700px ;
+    }
+
+
+  }
