@@ -9,13 +9,15 @@
       name="description"
       content="You are not in town and don't know where to get smashed tonight? Check our Gin map and find the nearest bar! Also learn about its history."
     />
-    <link rel="stylesheet" href="css/powerhugs_nav.css" />
-    <link rel="stylesheet" href="css/gin_footer.css" />
-    <link rel="stylesheet" href="css/history.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="github.com/necolas/normalize.css" />
+    <link rel="stylesheet" href="css/powerhugs_nav.css" /> 
+    <link rel="stylesheet" href="css/history.css" />
+    <link rel="stylesheet" href="css/gin_footer.css" />
+    
   </head>
   <body>
     <nav>
@@ -23,24 +25,27 @@
         <img src="./images/logo.png" alt="Banner Placeholder" />
       </div>
       <div class="drop_down">
-        <ul class="nav_list">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./history-of-gin.html">History</a></li>
-          <li><a href="./how-gin-is-made.html">How Gin is Made</a></li>
-          <li><a href="./gin-in-the-uk.html">UK Gin</a></li>
-          <li>
-            <a class="cart_icon" href="images/">
-              <!--added span to make space between text & icon-->
-              <span>Store</span>
-              <!--Moved img into <a> to make icon responsive with link-->
-              <img
-                src="./images/socials/shopping_cart_010.jpg"
-                alt="cart icon"
-                width="15px"
-              />
-            </a>
-          </li>
-        </ul>
+        <div class="list_wrapper">
+          <ul class="nav_list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./PowerHugs_History.html">History</a></li>
+            <li><a href="./howToMakeGin.html">How Gin is Made</a></li>
+            <li><a href="./gin-location-map.html">UK Gin</a></li>
+            <li>
+              <a class="cart_icon" href="./gin_contact_us.html">
+                <!--added span to make space between text & icon-->
+                <span>Store</span>
+                <!--Moved img into <a> to make icon responsive with link-->
+                <img
+                  src="./images/socials/shopping_cart_010.jpg"
+                  alt="cart icon"
+                  width="15px"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <div class="menu_wrapper">
           <div class="menu"></div>
         </div>

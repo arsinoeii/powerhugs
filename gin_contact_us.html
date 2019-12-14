@@ -7,47 +7,59 @@
     <title>Gin - Contact Us | Powerhugs.com</title>
     <meta name="description"
         content="You are not in town and don't know where to get smashed tonight? Just ask, we'll sort you out">
+        <link rel="stylesheet" href="github.com/necolas/normalize.css" />
         <link
-      rel="stylesheet"
-      href="css/gin_contact_us.css"
-    />
+        href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+        rel="stylesheet"
+      />
+        <link rel="stylesheet" href="css/powerhugs_nav.css" />      
+        <link rel="stylesheet" href="css/gin_contact_us.css" />
+        <link rel="stylesheet" href="css/gin_footer.css" />
   </head>
 </head>
 <body>
-        <nav class="placeholder-nav">
-                <div class="logo">
-                  <img src="./images/logo.png" alt="Banner Placeholder" />
-                </div>
-                <div class="drop_down">
-                  <ul class="nav_list">
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./history-of-gin.html">History</a></li>
-                    <li><a href="./how-gin-is-made.html">How Gin is Made</a></li>
-                    <li><a href="./gin-in-the-uk.html">UK Gin</a></li>
-                    <li>
-                      <a class="cart_icon" href="./gin-store.html">
-                        <!--added span to make space between text & icon-->
-                        <span>Store</span>
-                        <!--Moved img into <a> to make icon responsive with link-->
-                        <img
-                          src="./images/shopping_cart_010.jpg"
-                          alt="cart icon"
-                          width="15px"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="menu_wrapper">
-                    <div class="menu"></div>
-                  </div>
-                </div>
-    <h1>Contact Us</h1>
-    <form>
-        <h3>Please contact us with any questions...</h2>
+    <nav>
+        <div class="logo">
+          <img src="./images/logo.png" alt="Banner Placeholder" />
+        </div>
+        <div class="drop_down">
+          <div class="list_wrapper">
+            <ul class="nav_list">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./PowerHugs_History.html">History</a></li>
+              <li><a href="./howToMakeGin.html">How Gin is Made</a></li>
+              <li><a href="./gin-location-map.html">UK Gin</a></li>
+              <li>
+                <a class="cart_icon" href="./gin_contact_us.html">
+                  <!--added span to make space between text & icon-->
+                  <span>Store</span>
+                  <!--Moved img into <a> to make icon responsive with link-->
+                  <img
+                    src="./images/socials/shopping_cart_010.jpg"
+                    alt="cart icon"
+                    width="15px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="menu_wrapper">
+            <div class="menu"></div>
+          </div>
+        </div>
+      </nav>
+      <main>
+    <h1>Store</h1>
+    <h3>Please contact us with any questions you may have or if you'd be interested in purchasing one of our especially crafted gin selections...</h3>    
+    <form class="store_form">
+      <div class="personal_details">
         <div><input type="text" placeholder="Name"></div>
-        <div><input type="email" placeholder="@"></div>
+        <div><input type="email" placeholder="Email"></div>
         <div><input type="number" placeholder="Phone"></div>
+      </div>
         <p>I'm interested in learning more about...</p>
+      <div class="radio_wrapper">
         <div>
             <input type="radio" name="interest" value="history" id="history">
             <label for="history">History</label>
@@ -60,40 +72,60 @@
             <input type="radio" name="interest" value="UK_locations" id="UK_locations">
             <label for="UK_locations">British Distillers</label>
         </div>
-        <div><textarea name="Your_Message" id="" cols="30" rows="10">
-            Your message...
-        </textarea></div>
+        <div>
+            <input type="radio" name="interest" value="UK_locations" id="UK_locations">
+            <label for="UK_locations">Crafted Gin Selections</label>
+        </div>
+      </div>
+        <div><textarea name="Your_Message" placeholder="Your message..." id="" cols="30" rows="10"></textarea></div>
         <div><button>Submit</button></div>
     </form>
-    <footer>
-        <div class="email_newslettetr">
-            <h5 class="footerHeading">Email Newsletter</h5>
-            <form action="" class="footerInputs">
-                <div><input type="text" name="email"></div>
-                <div><button id="subscribe">Subscribe</button></div>
-            </form>
+  </main>
+  <footer>
+      <div class="email_newsletter">
+        <h5 class="footerHeading">Email Newsletter</h5>
+        <form action="" class="footerInputs">
+          <div><input type="text" name="email" placeholder="Email" /></div>
+          <div>
+            <button id="subscribe">Subscribe</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact_us">
+        <h5 class="footerHeading">Contact Us</h5>
+        <form action="" class="footerInputs">
+          <div><input type="text" name="email" placeholder="Email" /></div>
+          <div>
+            <textarea placeholder="Your message" rows="4" cols="50"></textarea>
+          </div>
+          <div><button id="submit">Submit</button></div>
+        </form>
+      </div>
+      <div class="search">
+        <h5 class="footerHeading">Search</h5>
+        <form action="">
+          <div><input type="text" name="search_box" placeholder="" /></div>
+          <div><button id="search">Search</button></div>
+        </form>
+        <div class="follow_us">
+          <h5 class="footerHeading">Follow Us</h5>
+          <ul>
+            <li>
+              <a href="#"><img src="./images/socials/Facebook.png" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/socials/Twitter.png" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/socials/Instagram.png" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/socials/Google+.png" alt=""/></a>
+            </li>
+          </ul>
         </div>
-        <div class="contact_us">
-            <h5 class="footerHeading">Contact Us</h5>
-            <form action="" class="footerInputs">
-                <div><input type="text" name="email"></div>
-                <div><input type="textarea"></div>
-                <div><input type="submit" value="Submit" id="contact"></div>
-            </form>
-        </div>
-        <div class="search">
-            <h5 class="footerHeading">Search</h5>
-            <div><input type="text" placeholder="Search" class="footerInputs"></div>
-            <div class="follow_us">
-                <h5 class="footerHeading">Follow Us</h5>
-                <ul>
-                    <li><a href="#"><img src="./images/Facebook.png" alt=""></a></li>
-                    <li><a href="#"><img src="./images/Twitter.png" alt=""></a></li>
-                    <li><a href="#"><img src="./images/Instagram.png" alt=""></a></li>
-                    <li><a href="#"><img src="./images/Google+.png" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </footer>
+    <script src="javascript/powerhugs_nav.js"></script>
 </body>
 </html>
