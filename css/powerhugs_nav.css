@@ -103,22 +103,28 @@ nav {
   .drop_down .menu_wrapper {
     display: flex;
   }
-
-  .nav_list {
-    display: none;
-  }
-
-  .nav_list.active {
-    display: flex;
-    flex-direction: column;
+  .list_wrapper {
     position: fixed;
     top: 5.8em;
     left: 0;
     width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .nav_list {
+    pointer-events: all;
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
-    background: #a8b1a2;
+    background: rgb(209, 211, 205);
     padding-right: 0.5em;
     line-height: 2em;
-    background: rgb(209, 211, 205);
+    transform: translate(0, -100%);
+    transition: 0.3s;
+  }
+
+  .nav_list.active {
+    transform: translate(0, 0);
   }
 }
