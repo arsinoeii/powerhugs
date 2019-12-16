@@ -59,12 +59,14 @@ h1 {
 }
 
 .text {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 80%;
-  font-size: 60px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    text-align: center;
 }
 
 .step-title {
@@ -81,6 +83,8 @@ h1 {
 .image-base {
   position: absolute;
   max-height: 600px;
+  z-index: 50;
+
 }
 
 .gap {
@@ -89,7 +93,7 @@ h1 {
 
 .img1 {
   position: absolute;
-  max-height: 1000px;
+  max-height: 600px;
   transform: translate(0, -40%);
   z-index: 50;
 }
@@ -102,32 +106,32 @@ h1 {
 
 .img3 {
   position: absolute;
-  max-height: 1000px;
+  max-height: 900px;
   transform: translate(0, -40%);
 }
 
 .img4 {
   position: absolute;
   max-height: 2000px;
-  transform: translate(0, -25%);
+  transform: translate(0, -29%);
 }
 
 .img5 {
   position: absolute;
-  max-height: 1600px;
+  max-height: 1400px;
   transform: translate(0, -20%);
 }
 
 .img6 {
   position: absolute;
-  max-height: 1300px;
+  max-height: 1500px;
   transform: translate(-20%, -20%);
 }
 
 .img7 {
   position: absolute;
-  max-height: 1200px;
-  transform: translate(0, -20%);
+  max-height: 850px;
+  transform: translate(-15%, -20%);
 }
 
 .video {
@@ -138,6 +142,10 @@ h1 {
 
 .image-base:hover {
   opacity: 50%;
+}
+
+.image-base:hover .text{
+  visibility: visible ;
 }
 
 @media (max-width: 1350px) {
@@ -157,6 +165,47 @@ h1 {
   .image-base {
     max-height: 1000px;
   }
+
+  .img1 {
+    max-height: 400px;
+    transform: translate(0, -40%);
+  }
+  
+  .img2 {
+    position: absolute;
+    max-height: 700px;
+    transform: translate(0, -40%);
+  }
+  
+  .img3 {
+    position: absolute;
+    max-height: 700px;
+    transform: translate(0, -40%);
+  }
+  
+  .img4 {
+    position: absolute;
+    max-height: 1500px;
+
+  }
+  
+  .img5 {
+    position: absolute;
+    max-height: 1000px;
+    transform: translate(0, -20%);
+  }
+  
+  .img6 {
+    position: absolute;
+    max-height: 650px;
+    transform: translate(-20%, -20%);
+  }
+  
+  .img7 {
+    position: absolute;
+    max-height: 600px;
+  }
+
 }
 
 @media (max-width: 890px) {
@@ -175,6 +224,48 @@ h1 {
 
   .image-base {
     max-height: 700px;
+  }
+
+  .img1 {
+    position: absolute;
+    max-height: 300px;
+    transform: translate(0, -40%);
+    z-index: 50;
+  }
+  
+  .img2 {
+    position: absolute;
+    max-height: 550px;
+    transform: translate(0, -40%);
+  }
+  
+  .img3 {
+    position: absolute;
+    max-height: 500px;
+    transform: translate(0, -40%);
+  }
+  
+  .img4 {
+    position: absolute;
+    max-height: 1000px;
+  }
+  
+  .img5 {
+    position: absolute;
+    max-height: 700px;
+    transform: translate(0, -20%);
+  }
+  
+  .img6 {
+    position: absolute;
+    max-height: 500px;
+    transform: translate(-20%, -20%);
+  }
+  
+  .img7 {
+    position: absolute;
+    max-height: 450px;
+    /* transform: translate(-30%, -20%); */
   }
 }
 
@@ -197,7 +288,91 @@ h1 {
     max-height: 500px;
   }
 
+
+  .img1 {
+    position: absolute;
+    max-width: 375px;
+    transform: translate(0, -40%);
+    z-index: 50;
+  }
+  
+  .img2 {
+    position: absolute;
+    max-height: 400px;
+    transform: translate(0, -40%);
+  }
+  
+  .img3 {
+    position: absolute;
+    max-height: 350px;
+    transform: translate(0, -40%);
+  }
+  
   .img4 {
     max-height: 700px;
   }
+  
+  .img5 {
+    position: absolute;
+    max-height: 500px;
+    transform: translate(0, -20%);
+  }
+  
+  .img6 {
+    position: absolute;
+    max-height: 400px;
+    transform: translate(-20%, -20%);
+  }
+  
+  .img7 {
+    position: absolute;
+    max-height: 310px;
+     transform: translate(-20%, -20%);
+  }
+  
+}
+
+@media (max-width: 450px) {
+
+  .img1 {
+    position: absolute;
+    max-width: 300px;
+    transform: translate(0, -40%);
+    z-index: 50;
+  }
+  
+  .img2 {
+    position: absolute;
+    max-height: 300px;
+    transform: translate(0, -40%);
+  }
+  
+  .img3 {
+    position: absolute;
+    max-height: 280px;
+    transform: translate(0, -40%);
+  }
+  
+  .img4 {
+    max-height: 500px;
+  }
+  
+  .img5 {
+    position: absolute;
+    max-height: 400px;
+    transform: translate(0, -20%);
+  }
+  
+  .img6 {
+    position: absolute;
+    max-height: 300px;
+    transform: translate(-20%, -20%);
+  }
+  
+  .img7 {
+    position: absolute;
+    max-height: 220px;
+     transform: translate(-20%, -20%);
+  }
+  
 }
