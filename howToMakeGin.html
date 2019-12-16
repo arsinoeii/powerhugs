@@ -8,6 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>How to make Gin | Powerhugs.com</title>
+<link rel="stylesheet" href="github.com/necolas/normalize.css" />
+<link
+href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+rel="stylesheet"
+/>
+<link
+rel="stylesheet"
+href="css/powerhugs_nav.css"
+/>
 <link
 rel="stylesheet"
 href="css/howToMakeGin.css"
@@ -16,46 +25,47 @@ href="css/howToMakeGin.css"
 rel="stylesheet"
 href="css/gin_footer.css"
 />
-<link
-rel="stylesheet"
-href="css/powerhugs_nav.css"
-/>
-<link
-href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-rel="stylesheet"
-/>
+
+
 </head>
 <body>
-<nav class="placeholder-nav">
-<div class="logo">
-<img src="./images/logo.png" alt="Banner Placeholder" />
-</div>
-<div class="drop_down">
-<ul class="nav_list">
-<li><a href="./home.html">Home</a></li>
-<li><a href="./history-of-gin.html">History</a></li>
-<li><a href="./how-gin-is-made.html">How Gin is Made</a></li>
-<li><a href="./gin-in-the-uk.html">UK Gin</a></li>
-<li>
-<a class="cart_icon" href="./gin-store.html">
-<!--added span to make space between text & icon-->
-<span>Store</span>
-<!--Moved img into <a> to make icon responsive with link-->
-<img
-src="./images/shopping_cart_010.jpg"
-alt="cart icon"
-width="15px"
-/>
-</a>
-</li>
-</ul>
-</nav>
+        <nav>
+                <div class="logo">
+                  <img src="./images/logo.png" alt="Banner Placeholder" />
+                </div>
+                <div class="drop_down">
+                  <div class="list_wrapper">
+                    <ul class="nav_list">
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./PowerHugs_History.html">History</a></li>
+                      <li><a href="./howToMakeGin.html">How Gin is Made</a></li>
+                      <li><a href="./gin-location-map.html">UK Gin</a></li>
+                      <li>
+                        <a class="cart_icon" href="./gin_contact_us.html">
+                          <!--added span to make space between text & icon-->
+                          <span>Store</span>
+                          <!--Moved img into <a> to make icon responsive with link-->
+                          <img
+                            src="./images/socials/shopping_cart_010.jpg"
+                            alt="cart icon"
+                            width="15px"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+          
+                  <div class="menu_wrapper">
+                    <div class="menu"></div>
+                  </div>
+                </div>
+              </nav>
 <main>
 <!-- Main contain two articles - the stpes to make gin and the embedded Youtube Link -->
 <article>
 <div class="container">
-<h2 class="title_main">How To Make Gin</h2>
-<div class="box box1"> 
+<h1 class="title_main">How To Make Gin</h1>
+<div class="box box1">
 <div class="step sub-box step_1 image-left"> 
 <img class = "image-base img1" src = "images/makegin1.jpg">
 <p class="text">
@@ -130,37 +140,53 @@ allowfullscreen
 </div>
 </div>
 </main>
-<footer> 
-<div class="email_newslettetr">
-<h5 class="footerHeading">Email Newsletter</h5>
-<form action="" class="footerInputs">
-<div><input type="text" name="email"></div>
-<div><button id="subscribe">Subscribe</button></div>
-</form>
-</div>
-<div class="contact_us">
-<h5 class="footerHeading">Contact Us</h5>
-<form action="" class="footerInputs">
-<div><input type="text" name="email"></div>
-<div><input type="textarea"></div>
-<div><input type="submit" value="Submit" id="contact"></div>
-</form>
-</div>
-<div class="search">
-<h5 class="footerHeading">Search</h5>
-<div><input type="text" placeholder="Search" class="footerInputs"></div>
-<div class="follow_us">
-<h5 class="footerHeading">Follow Us</h5>
-<ul>
-<li><a href="#"><img src="./images/Facebook.png" alt=""></a></li>
-<li><a href="#"><img src="./images/Twitter.png" alt=""></a></li>
-<li><a href="#"><img src="./images/Instagram.png" alt=""></a></li>
-<li><a href="#"><img src="./images/Google+.png" alt=""></a></li>
-</ul>
-</div>
-</div>
-</footer>
+<footer>
+        <div class="email_newsletter">
+          <h5 class="footerHeading">Email Newsletter</h5>
+          <form action="" class="footerInputs">
+            <div><input type="text" name="email" placeholder="Email" /></div>
+            <div>
+              <button id="subscribe">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact_us">
+          <h5 class="footerHeading">Contact Us</h5>
+          <form action="" class="footerInputs">
+            <div><input type="text" name="email" placeholder="Email" /></div>
+            <div>
+              <textarea placeholder="Your message" rows="4" cols="50"></textarea>
+            </div>
+            <div><button id="submit">Submit</button></div>
+          </form>
+        </div>
+        <div class="search">
+          <h5 class="footerHeading">Search</h5>
+          <form action="">
+            <div><input type="text" name="search_box" placeholder="" /></div>
+            <div><button id="search">Search</button></div>
+          </form>
+          <div class="follow_us">
+            <h5 class="footerHeading">Follow Us</h5>
+            <ul>
+              <li>
+                <a href="#"><img src="./images/socials/Facebook.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/socials/Twitter.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/socials/Instagram.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/socials/Google+.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 </body>
+<script src="javascript/powerhugs_nav.js"></script>
 </html>
 
 
