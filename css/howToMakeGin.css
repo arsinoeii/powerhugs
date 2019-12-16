@@ -334,6 +334,10 @@ h1 {
 
 @media (max-width: 450px) {
 
+  h1 {
+    font-size: 35px;
+  }
+
   .img1 {
     position: absolute;
     max-width: 300px;
@@ -375,4 +379,10 @@ h1 {
      transform: translate(-20%, -20%);
   }
   
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 30px;
+  }
 }

@@ -96,3 +96,13 @@ p {
 button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 411px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+}
