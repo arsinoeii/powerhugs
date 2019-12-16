@@ -90,3 +90,47 @@ p {
 .img_container img {
   width: 100%;
 }
+
+@media (max-width: 613px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 495px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 391px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px
+  }
+
+  .date {
+    font-size: 20px
+  }
+}
+
+@media (max-width: 328px) {
+  h3 {
+    font-size: 0.7em;
+  }
+
+  h2 {
+    font-size: 18px
+  }
+
+  .date {
+    font-size: 18px
+  }
+}

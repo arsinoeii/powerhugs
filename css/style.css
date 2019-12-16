@@ -87,7 +87,7 @@ img.d-block {
   transform: translate(-50%, -50%);
 }
 
-header h1 {
+ h1 {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 40px;
@@ -96,6 +96,24 @@ header h1 {
 }
 
 .global_container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 514px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 411px) {
+  h1 {
+    font-size: 21px;
+  }
 }
