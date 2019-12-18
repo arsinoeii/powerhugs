@@ -69,7 +69,6 @@ p {
   width: 10%;
   padding: 10px;
   margin: 3px 0;
-  
 }
 
 .radio_wrapper input[type="radio"]:hover {
@@ -89,11 +88,16 @@ p {
 
 .store_form button {
   font-family: montserrat;
+  font-size: 0.8em;
   color: rgb(226, 109, 56);
+  background-color: white;
+  width: 70px;
+  height: 30px;
   border-radius: 3px;
+  border: none;
 }
 
-button:hover {
+.store_form button:hover {
   cursor: pointer;
 }
 

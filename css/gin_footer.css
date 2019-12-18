@@ -54,6 +54,7 @@ footer textarea {
 }
 
 footer button {
+  border: none;
   font-family: montserrat;
   font-size: 0.7em;
   border-radius: 3px;

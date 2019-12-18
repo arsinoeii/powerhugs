@@ -103,6 +103,7 @@ nav {
   .drop_down .menu_wrapper {
     display: flex;
   }
+
   .list_wrapper {
     position: fixed;
     top: 5.8em;
