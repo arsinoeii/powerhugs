@@ -35,7 +35,7 @@ function initMap() {
                 // Set attributes
                 contentWrapper.setAttribute('class', 'info-window');
                 imgWrapper.setAttribute('class', 'imgWrapper');
-                img.setAttribute('src', `../powerhugs/images/distilleries/${item.photos.img_url}`);
+                img.setAttribute('src', `../images/distilleries/${item.photos.img_url}`);
                 textWrapper.setAttribute('class', 'textWrapper')
                 name.setAttribute('class', 'name');
                 address.setAttribute('class', 'address');
